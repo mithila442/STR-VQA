@@ -14,6 +14,13 @@ The model achieves state-of-the-art performance on three major benchmarks:
 - **Transformer-based temporal modeling** for learning temporal dependencies.
 - **Efficient pipeline** with low compute cost (59 GFLOPs for 8-frame input).
 
+### 🎯 Saliency Prediction Module (UNet3D with Register Tokens)
+![Saliency Module Architecture](saliency_pretraining.png)
+
+### 📉 STR-VQA Quality Prediction Module (Spatial + Temporal Fusion)
+![VQA Module Architecture](spatiotemporal_vqa.png)
+
+
 ## 🧱 Project Structure
 - `sal_withreg.py / sal_noreg.py` – Saliency model architecture with and without registers.
 - `train_sal_withreg.py / train_sal_noreg.py` – Training script for saliency map generation with and without registers.
