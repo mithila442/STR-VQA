@@ -34,12 +34,12 @@ The model achieves state-of-the-art performance on three major benchmarks:
 
 ## 📦 Installation
 ```bash
-git clone https://github.com/your-username/STR-VQA.git
+git clone https://github.com/mithila442/STR-VQA.git
 cd STR-VQA
 
 # (Optional) Create a virtual environment
-python -m venv venv
-source venv/bin/activate
+python -m venv myenv
+source myenv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
