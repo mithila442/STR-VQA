@@ -47,7 +47,7 @@ pip install -r requirements.txt
 
 ## 📁 Dataset Preparation
 
-- Download raw videos and MOS CSV from the official website.
+- Download raw videos and CSV or MAT files of Mean Opinion Score (MOS) from the official website.
 - Use `extract_frame.py` to extract 8 frames per video for VQA and 60 frames for saliency.
 
 ## 🧪 Run Instructions
