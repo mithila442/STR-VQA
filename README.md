@@ -69,7 +69,7 @@ python train_vqa.py
 
 ### Fine-tune & Evaluate STR-VQA
 ```bash
-python evaluate4.py
+python evaluate.py
 ```
 
 ## 👥 Contributors
