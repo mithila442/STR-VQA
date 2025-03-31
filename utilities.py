@@ -24,13 +24,12 @@ def correlation_coefficient_loss(y_pred, y_true):
 
 
 class CombinedLoss(nn.Module):
-    def __init__(self, alpha1=0.1, alpha2=0.1):
+    def __init__(self, gamma=0.1):
         super(CombinedLoss, self).__init__()
-        self.alpha1 = alpha1
-        self.alpha2 = alpha2
+        self.gamma = gamma
 
     def forward(self, y_pred, y_true):
         l_kl = kl_divergence_loss(y_pred, y_true)
         l_cc = correlation_coefficient_loss(y_pred, y_true)
-        loss = self.alpha1 * l_kl + l_cc
+        loss = self.gamma * l_kl + l_cc
         return loss.mean()
