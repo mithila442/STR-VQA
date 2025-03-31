@@ -253,7 +253,7 @@ if __name__ == '__main__':
         # Initialize the model and training process
         model = UNetWithRegisterTokens(in_channels=3, out_channels=1, num_register_tokens=8)
         model = nn.DataParallel(model).to(device)
-        criterion = CombinedLoss(alpha1=0.01, alpha2=0.1)
+        criterion = CombinedLoss(gamma=0.01)
         optimizer = optim.Adam(model.parameters(), lr=learning_rate)
         scheduler = CosineAnnealingLR(optimizer, T_max=20, eta_min=0)
 
